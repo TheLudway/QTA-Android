@@ -83,14 +83,84 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tabla_salida_valor"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@color/green"
+        android:text="ºUnidad"
+        app:layout_editor_absoluteX="20dp"
+        app:layout_editor_absoluteY="500dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="570dp" />
+
+    <TextView
+        android:id="@+id/tabla_salida_c"
         android:layout_width="150dp"
         android:layout_height="30dp"
-        android:textColor="@android:color/black"
         android:background="@color/gray"
-        android:text="ºK"
-        android:fontFamily="@font/Roboto-Black"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="585dp" />
+        app:layout_constraintTop_toBottomOf="@id/tabla_salida_valor"
+        app:layout_constraintLeft_toLeftOf="@id/tabla_salida_valor"
+        android:layout_marginBottom="2dp"
+        android:text="ºC"/>
+
+    <TextView
+        android:id="@+id/tabla_salida_f"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/tabla_salida_c"
+        app:layout_constraintLeft_toLeftOf="@id/tabla_salida_valor"
+        android:layout_marginBottom="2dp"
+        android:text="ºF"/>
+
+    <TextView
+        android:id="@+id/tabla_salida_k"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/tabla_salida_f"
+        app:layout_constraintLeft_toLeftOf="@id/tabla_salida_valor"
+        android:text="ºK"/>
+
+    <TextView
+        android:id="@+id/tabla_unidad"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@color/green"
+        app:layout_constraintLeft_toRightOf="@id/tabla_salida_valor"
+        app:layout_constraintTop_toTopOf="@id/tabla_salida_valor"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="ºUnidad"/>
+
+    <TextView
+        android:id="@+id/tabla_unidad_c"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/tabla_unidad"
+        app:layout_constraintLeft_toLeftOf="@id/tabla_unidad"
+        android:layout_marginBottom="2dp"
+        android:text="ºC"/>
+
+    <TextView
+        android:id="@+id/tabla_unidad_f"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/tabla_unidad_c"
+        app:layout_constraintLeft_toLeftOf="@id/tabla_unidad"
+        android:layout_marginBottom="2dp"
+        android:text="ºF"/>
+
+    <TextView
+        android:id="@+id/tabla_unidad_k"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/tabla_unidad_f"
+        app:layout_constraintLeft_toLeftOf="@id/tabla_unidad"
+        android:text="ºK"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
