@@ -11,7 +11,7 @@
         android:id="@+id/Texto_conversor"
         android:layout_width="312dp"
         android:layout_height="94dp"
-        android:fontFamily=""
+        android:typeface="serif"
         android:gravity="center"
         android:text="El conversor de unidades se usa introduciendo el valor numérico de temperatura en el campo “Valor”, y seleccionando la unidad con ayuda de los botones °C, °F o °K."
         tools:layout_editor_absoluteX="49dp"
