@@ -97,10 +97,11 @@
         android:text="ºUnidad"
         android:textStyle="bold"
         android:textColor="@color/white"
-        app:layout_editor_absoluteX="20dp"
-        app:layout_editor_absoluteY="500dp"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="570dp" />
+        app:layout_constraintLeft_toLeftOf="@id/main"
+        app:layout_constraintTop_toTopOf="@id/main"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="600dp"
+        />
 
     <TextView
         android:id="@+id/tabla_salida_c"
