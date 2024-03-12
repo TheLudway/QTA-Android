@@ -2,5 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="mtrl_textinput_default_box_stroke_color">#078322</color>
+    <color name="green">##078322</color>
+    <color name="gray">##EEEBEB</color>
 </resources>
