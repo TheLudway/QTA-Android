@@ -80,5 +80,15 @@
             android:hint="Valor" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:textColor="@android:color/black"
+        android:background="@color/gray"
+        android:text="ºK"
+        android:fontFamily="@font/Roboto-Black"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="585dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
