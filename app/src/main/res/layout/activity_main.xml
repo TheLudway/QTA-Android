@@ -9,34 +9,35 @@
 
     <TextView
         android:id="@+id/Texto_conversor"
-        android:layout_width="305dp"
+        android:layout_width="312dp"
         android:layout_height="94dp"
+        android:typeface="serif"
         android:gravity="center"
         android:text="El conversor de unidades se usa introduciendo el valor numérico de temperatura en el campo “Valor”, y seleccionando la unidad con ayuda de los botones °C, °F o °K."
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="267dp" />
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="254dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="33dp"
         android:gravity="center"
         android:text="Conversor de Unidades de Temperatura"
         android:textColor="#078322"
+        android:textSize="33dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.133" />
+        app:layout_constraintVertical_bias="0.084" />
+
 
     <ImageView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/img_temperatura"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="181dp" />
-
+        tools:layout_editor_absoluteY="137dp" />
 
     <Button
         android:id="@+id/button"
@@ -45,8 +46,17 @@
         android:
         android:background="@drawable/button_background"
         android:text="ºC"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="417dp" />
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="469dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button_background"
+        android:text="ºK"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="469dp" />
 
     <Button
         android:id="@+id/button"
@@ -54,28 +64,21 @@
         android:layout_height="60dp"
         android:background="@drawable/button_background"
         android:text="ºF"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="417dp" />
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="469dp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/button_background"
-        android:text="ºK"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="417dp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="380dp">
 
-    <TextView
-        android:id="@+id/tabla_k"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
-        android:background="@color/gray"
-        android:fontFamily="@font/Roboto-Black"
-        android:gravity="center"
-        android:text="ºK"
-        android:textColor="@android:color/black"
-        tools:layout_editor_absoluteX="218dp"
-        tools:layout_editor_absoluteY="613dp" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:hint="Valor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
