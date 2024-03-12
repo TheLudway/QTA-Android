@@ -8,6 +8,15 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/Texto_conversor"
+        android:layout_width="305dp"
+        android:layout_height="94dp"
+        android:gravity="center"
+        android:text="El conversor de unidades se usa introduciendo el valor numérico de temperatura en el campo “Valor”, y seleccionando la unidad con ayuda de los botones °C, °F o °K."
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="33dp"
@@ -28,5 +37,33 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="181dp" />
 
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:
+        android:background="@drawable/button_background"
+        android:text="ºC"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="417dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button_background"
+        android:text="ºF"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="417dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button_background"
+        android:text="ºK"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="417dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
