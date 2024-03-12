@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-    <solid android:color="@color/colorPrimary" /> <!-- Set your desired background color here -->
+    <solid android:backgroundTint="@color/green" /> <!-- Set your desired background color here -->
     <corners android:radius="0dp" /> <!-- Set the corner radius to 0dp for straight corners -->
 </shape>
