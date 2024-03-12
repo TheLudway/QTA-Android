@@ -40,32 +40,38 @@
         tools:layout_editor_absoluteY="137dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_c"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:
         android:background="@drawable/button_background"
         android:text="ºC"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="469dp" />
+        app:layout_constraintLeft_toLeftOf="@id/main"
+        app:layout_constraintTop_toTopOf="@id/main"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="500dp"
+        />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/button_background"
-        android:text="ºK"
-        tools:layout_editor_absoluteX="261dp"
-        tools:layout_editor_absoluteY="469dp" />
-
-    <Button
-        android:id="@+id/button"
+        android:id="@+id/button_f"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/button_background"
         android:text="ºF"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="469dp" />
+        app:layout_constraintLeft_toLeftOf="@id/main"
+        app:layout_constraintTop_toTopOf="@id/button_c"
+        android:layout_marginLeft="150dp"
+        />
+
+    <Button
+        android:id="@+id/button_k"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button_background"
+        android:text="ºK"
+        app:layout_constraintLeft_toLeftOf="@id/main"
+        app:layout_constraintTop_toTopOf="@id/button_f"
+        android:layout_marginLeft="250dp"
+        />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/valorLayout"
