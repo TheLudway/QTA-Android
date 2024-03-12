@@ -71,7 +71,7 @@
         android:id="@+id/valorLayout"
         android:layout_width="328dp"
         android:layout_height="58dp"
-        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        app:boxStrokeColor="@color/green"
         tools:layout_editor_absoluteX="41dp"
         tools:layout_editor_absoluteY="380dp">
 
@@ -84,6 +84,7 @@
 
     <TextView
         android:id="@+id/tabla_salida_valor"
+        android:gravity="center"
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:background="@color/green"
@@ -124,6 +125,7 @@
 
     <TextView
         android:id="@+id/tabla_unidad"
+        android:gravity="center"
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:background="@color/green"
