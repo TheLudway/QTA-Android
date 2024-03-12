@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="32dp"
-        android:gravity=""
+        android:gravity="center"
         android:text="Conversor de Unidades de Temperatura"
         android:textColor="#078322"
         app:layout_constraintBottom_toBottomOf="parent"
