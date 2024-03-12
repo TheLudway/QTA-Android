@@ -39,51 +39,23 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="137dp" />
 
-    <Button
-        android:id="@+id/button_c"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/button_background"
-        android:text="ºC"
-        app:layout_constraintLeft_toLeftOf="@id/main"
-        app:layout_constraintTop_toTopOf="@id/main"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="500dp"
-        />
-
-    <Button
-        android:id="@+id/button_f"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/button_background"
-        android:text="ºF"
-        app:layout_constraintLeft_toLeftOf="@id/main"
-        app:layout_constraintTop_toTopOf="@id/button_c"
-        android:layout_marginLeft="150dp"
-        />
-
-    <Button
-        android:id="@+id/button_k"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/button_background"
-        android:text="ºK"
-        app:layout_constraintLeft_toLeftOf="@id/main"
-        app:layout_constraintTop_toTopOf="@id/button_f"
-        android:layout_marginLeft="250dp"
-        />
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/valorLayout"
-        android:layout_width="328dp"
-        android:layout_height="58dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:boxStrokeColor="@color/green"
+        app:layout_constraintLeft_toLeftOf="@id/main"
+        app:layout_constraintTop_toTopOf="@id/main"
+        app:layout_constraintRight_toRightOf="@id/main"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
         tools:layout_editor_absoluteX="41dp"
         tools:layout_editor_absoluteY="380dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/valor"
-            android:layout_width="325dp"
+            android:layout_width="305dp"
             android:layout_height="wrap_content"
             android:hint="Valor" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -94,7 +66,7 @@
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:background="@color/green"
-        android:text="ºUnidad"
+        android:text="Valor"
         android:textStyle="bold"
         android:textColor="@color/white"
         app:layout_constraintLeft_toLeftOf="@id/main"
@@ -174,6 +146,40 @@
         app:layout_constraintTop_toBottomOf="@id/tabla_unidad_f"
         app:layout_constraintLeft_toLeftOf="@id/tabla_unidad"
         android:text="ºK"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@id/main"
+        app:layout_constraintLeft_toLeftOf="@id/main"
+        app:layout_constraintRight_toRightOf="@id/main"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="500dp"
+
+        >
+
+        <Button
+            android:id="@+id/button_c"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="ºC" />
+
+        <Button
+            android:id="@+id/button_f"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="ºF" />
+
+        <Button
+            android:id="@+id/button_k"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="ºK" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
