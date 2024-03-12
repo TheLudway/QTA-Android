@@ -89,6 +89,8 @@
         android:layout_height="40dp"
         android:background="@color/green"
         android:text="ºUnidad"
+        android:textStyle="bold"
+        android:textColor="@color/white"
         app:layout_editor_absoluteX="20dp"
         app:layout_editor_absoluteY="500dp"
         tools:layout_editor_absoluteX="49dp"
@@ -133,6 +135,8 @@
         app:layout_constraintTop_toTopOf="@id/tabla_salida_valor"
         android:layout_marginLeft="2dp"
         android:layout_marginBottom="2dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
         android:text="ºUnidad"/>
 
     <TextView
