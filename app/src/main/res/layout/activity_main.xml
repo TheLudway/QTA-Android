@@ -150,6 +150,7 @@
 
             <TextView
                 android:id="@+id/tabla_valores_valor"
+                android:textColor="@color/white"
                 android:background="@color/green"
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
@@ -191,6 +192,7 @@
 
             <TextView
                 android:id="@+id/tabla_unidades_unidad"
+                android:textColor="@color/white"
                 android:background="@color/green"
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
