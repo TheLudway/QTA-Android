@@ -8,36 +8,34 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginRight="17dp"
+        android:textSize="31dp"
+        android:gravity="center"
+        android:text="Conversor de Unidades de Temperatura"
+        android:textColor="@color/green"
+        app:layout_constraintLeft_toLeftOf="@id/main"
+        app:layout_constraintRight_toRightOf="@id/main"
+        app:layout_constraintTop_toTopOf="@id/main" />
+
+    <TextView
         android:id="@+id/instrucciones"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:typeface="serif"
         android:gravity="center"
+        android:textSize="15dp"
         android:text="El conversor de unidades se usa introduciendo el valor numérico de temperatura en el campo “Valor”, y seleccionando la unidad con ayuda de los botones °C, °F o °K."
         app:layout_constraintLeft_toLeftOf="@id/main"
         app:layout_constraintRight_toRightOf="@id/main"
         app:layout_constraintTop_toBottomOf="@id/imagen"
         android:layout_marginLeft="28dp"
         android:layout_marginRight="28dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         />
-
-    <TextView
-        android:id="@+id/titulo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Conversor de Unidades de Temperatura"
-        android:textColor="#078322"
-        android:textSize="33dp"
-        app:layout_constraintTop_toTopOf="@id/main"
-        app:layout_constraintLeft_toLeftOf="@id/main"
-        app:layout_constraintRight_toRightOf="@id/main"
-        android:layout_marginTop="73dp"
-        android:layout_marginLeft="17dp"
-        android:layout_marginRight="17dp"
-        />
-
 
     <ImageView
         android:id="@+id/imagen"
@@ -47,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@id/titulo"
         app:layout_constraintLeft_toLeftOf="@id/main"
         app:layout_constraintRight_toRightOf="@id/main"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="130dp"
         android:layout_marginRight="130dp"
         />
@@ -60,7 +58,7 @@
         app:layout_constraintLeft_toLeftOf="@id/main"
         app:layout_constraintRight_toRightOf="@id/main"
         app:layout_constraintTop_toBottomOf="@id/instrucciones"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="28dp"
         android:layout_marginRight="28dp"
         >
@@ -82,7 +80,7 @@
         app:layout_constraintRight_toRightOf="@id/main"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
 
         >
 
@@ -114,7 +112,8 @@
             android:text="ºK" />
     </RelativeLayout>
 
-    <RelativeLayout
+    <LinearLayout
+        android:id="@+id/tabla"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -123,15 +122,15 @@
         app:layout_constraintRight_toRightOf="@id/main"
         android:layout_marginLeft="28dp"
         android:layout_marginRight="28dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         >
 
         <LinearLayout
             android:id="@+id/tabla_lado_valores"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="vertical"
-            android:layout_alignParentStart="true"
             >
 
             <TextView
@@ -171,8 +170,8 @@
             android:id="@+id/tabla_lado_unidades"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="vertical"
-            android:layout_alignParentEnd="true"
             >
 
             <TextView
@@ -208,7 +207,7 @@
                 android:text="ºK" />
         </LinearLayout>
 
-    </RelativeLayout>
+    </LinearLayout>
 
 
 
